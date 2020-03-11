@@ -14,15 +14,23 @@ nav{
 }
 #nav {
   width:100%;
-  height:90%;
-  background-color: #00FFFF;
+  height:60%;
+
 }
 #upgrade{
   background-color: blue;
 }
-footer{
-  background-color: brown;
+#footer-barra {
+ background-color: grey;
 }
+#footer-barra > div ul li{
+  border:2px solid black;
+  background-color: blue;
+}
+#footer-barra div:nth-child(2){
+  background-color: red;
+}
+
 #dischi {
   background-color: pink;
   width: calc(100% - 200px);
@@ -42,16 +50,29 @@ nav {
   width:200px;
   display: flex;
   flex-direction: column;
+  padding:18px;
 }
 #nav {
   display: flex;
   flex-direction:column;
 }
-#nav-3 {
- height: 10%;
- justify-content: center;
- flex-direction: column;
+#nav-1{
+  padding:7px 0;
 }
+#nav-1 li {
+  padding:3px 0;
+}
+#nav-2 li {
+  padding:3px 0;
+}
+
+#nav-3 {
+  height: 100%;
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-end;
+}
+
 /*  fine barra navigazione sx --*/
 /* inizio barra UPGRADE --------*/
 #upgrade {
@@ -60,6 +81,22 @@ nav {
   position: fixed;
   top:0;
   left: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+#upgrade > div {
+  background-color: black;
+  width: 15%;
+  height: 50%;
+  padding:7px;
+  text-align: center;
+  border-radius: 36px;
+  margin-right: 5px;
+}
+#upgrade a {
+
 }
 /* fine   barra UPGRADE --------*/
 /* inizio sezione MAIN dei DISCHI */
@@ -75,5 +112,50 @@ nav {
 footer {
   height: 100px;
   width:100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #272727;
+}
+#footer-barra {
+  width: 40%;
+  height: 100%;
+}
+#footer-barra > div {
+  width: 50%;
+  height: 50%;
+  margin:auto;
+}
+#footer-barra div:nth-child(2){
+  width: 100%;
+  height: 50%;
+}
+#footer-barra > div ul{
+  width: 100%;
+  height: 100%;
+  list-style-type:none;
+}
+#footer-barra > div ul li{
+  width: 20%;
+  height: 100%;
+  float: left;
+  background-color: blue;
+}
+
+footer div:nth-child(1) {
+  width: 20%;
+  
+}
+footer div:nth-child(1) img{
+  width: 40px;
+  float:left;
+}
+footer div:nth-child(1) div{
+ float: left;
+}
+
+
+footer div:nth-child(3) {
+  width: 20%;
 }
 /* fine   footer--------------- */
