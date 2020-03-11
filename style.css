@@ -14,7 +14,7 @@ nav{
 }
 #nav {
   width:100%;
-  height: 100%;
+  height:90%;
   background-color: #00FFFF;
 }
 #upgrade{
@@ -46,8 +46,11 @@ nav {
 #nav {
   display: flex;
   flex-direction:column;
-
-
+}
+#nav-3 {
+ height: 10%;
+ justify-content: center;
+ flex-direction: column;
 }
 /*  fine barra navigazione sx --*/
 /* inizio barra UPGRADE --------*/
