@@ -33,8 +33,12 @@ nav{
 
 #dischi {
   background-color: pink;
-  width: calc(100% - 200px);
-  height:calc(100vh - 100px);
+}
+#dischi-nav {
+  background-color: orange;
+}
+.dischi-main-row {
+  border:2px solid white;
 }
 /* fine   debug  */
 /* inizio MAIN  ----------------*/
@@ -75,6 +79,10 @@ nav {
 
 /*  fine barra navigazione sx --*/
 /* inizio barra UPGRADE --------*/
+#dischi {
+  width: calc(100% - 200px);
+  height:calc(100vh - 100px);
+}
 #upgrade {
   width:calc(100vw - 200px) ;
   height: 100px;
@@ -95,15 +103,32 @@ nav {
   border-radius: 36px;
   margin-right: 5px;
 }
-#upgrade a {
 
-}
 /* fine   barra UPGRADE --------*/
 /* inizio sezione MAIN dei DISCHI */
-#dischi {
-  display:flex;
-  flex-wrap:wrap;
+#dischi-nav {
+ margin-top:100px;
+ display: flex;
+ justify-content: center;
+ height: 70px;
+}
+#dischi-nav ul {
+  list-style-type: none;
+  margin:auto;
 
+}
+#dischi-nav ul li {
+  float: left;
+}
+#dischi-nav a {
+  text-decoration: none;
+  padding:8px;
+}
+#dischi-main {
+  height: 100%;
+}
+.dischi-main-row {
+  height: 33.3%;
 }
 
 /* fine sezione MAIN dei DISCHI */
@@ -144,7 +169,7 @@ footer {
 
 footer div:nth-child(1) {
   width: 20%;
-  
+
 }
 footer div:nth-child(1) img{
   width: 40px;
