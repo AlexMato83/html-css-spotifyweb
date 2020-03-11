@@ -1,0 +1,76 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/*  inizio barra navigazione sx */
+/* inizio debug  */
+
+nav{
+  background-color: black;
+  height: 100%;
+  /* height: calc(100vh - 100px) */
+}
+#nav {
+  width:100%;
+  height: 100%;
+  background-color: #00FFFF;
+}
+#upgrade{
+  background-color: blue;
+}
+footer{
+  background-color: brown;
+}
+#dischi {
+  background-color: pink;
+  width: calc(100% - 200px);
+  height:calc(100vh - 100px);
+}
+/* fine   debug  */
+/* inizio MAIN  ----------------*/
+main {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 100px);
+}
+/* fine MAIN  ----------------*/
+
+/*  inizio barra navigazione sx */
+nav {
+  width:200px;
+  display: flex;
+  flex-direction: column;
+}
+#nav {
+  display: flex;
+  flex-direction:column;
+
+
+}
+/*  fine barra navigazione sx --*/
+/* inizio barra UPGRADE --------*/
+#upgrade {
+  width:calc(100vw - 200px) ;
+  height: 100px;
+  position: fixed;
+  top:0;
+  left: 200px;
+}
+/* fine   barra UPGRADE --------*/
+/* inizio sezione MAIN dei DISCHI */
+#dischi {
+  display:flex;
+  flex-wrap:wrap;
+
+}
+
+/* fine sezione MAIN dei DISCHI */
+
+/* inizio footer--------------- */
+footer {
+  height: 100px;
+  width:100vw;
+}
+/* fine   footer--------------- */
